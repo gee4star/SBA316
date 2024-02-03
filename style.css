@@ -1,0 +1,15 @@
+body {
+    background-image: url(https://t3.ftcdn.net/jpg/06/32/16/70/360_F_632167016_BtM8ywPtfm8SzZRnBelGWRvesw0QNjAM.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+.flowers {
+    margin-left: 170px;
+}
+.span1 {
+    margin-left: 120px;
+}
