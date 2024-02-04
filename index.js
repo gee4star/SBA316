@@ -7,6 +7,24 @@
 // myDiv.appendChild(document.createTextNode('New element text')); //appends a child to myDiv which has the text inside it New element text
 
 // document.body.replaceChild(myDiv, myPar); //PUTS the new text just written in Javascript from myDiv and now this text: New element text replaces the text in myPar: Example Text
+
+
+function addElement() {
+  // create a new div element
+  const newDiv = document.createElement("div");
+
+  // and give content
+  const newContent = document.createTextNode("WE ARE OPEN YEAR ROUND!");
+
+  // add the text node to the newly created div
+  newDiv.appendChild(newContent);
+
+  // add the newly created element and its content into the DOM
+  const currentDiv = document.getElementById("div1");
+  document.body.insertBefore(newDiv, currentDiv);
+}
+addElement();
+
 let submit= document.getElementById("btn");
 submit.addEventListener("click", myAlert);
 function myAlert(){
@@ -27,7 +45,7 @@ const log = document.getElementById("log");
 
 input.addEventListener("invalid", (e) => {
   log.appendChild(
-    Object.assign(document.createElement("li"), {
+    object.assign(document.createElement("li"), {
       textContent: JSON.stringify(e.target.value),
     }),
   );
