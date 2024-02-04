@@ -32,4 +32,18 @@ input.addEventListener("invalid", (e) => {
     }),
   );
 });
+document.getElementById("bInfo").innerHTML = 
+    " The screen height is " + screen.height; 
+document.getElementById("bInfo2").innerHTML = 
+    "The available screen width is " + screen.availWidth;  
 
+const label = document.querySelectorAll('label');
+const count = label.length;
+
+for (let i = 0; i < count; i++) {
+    label[i].style.textShadow = " 2px 2px #558ABB";
+}
+
+let paragraph = document.createElement("p");
+paragraph.innerText="Contact Us: 602-8675309";
+document.body.appendChild(paragraph);
