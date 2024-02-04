@@ -57,7 +57,30 @@
     <option value="Afternoon">Afternoon</option>
     <option value="Evening">Evening</option>
   </select>
+  <!-- <form>
+    <input 
+        type="text" 
+        name="username" 
+        placeholder="Username"
+        pattern="[a-z]{1,15}"
+        id="username">
+</form> -->
+<label for="city">City: (2-20 characters)</label>
+<input id="city" name="city" type="text" value="" pattern="\w{2,16}" required />
 
+<label for="pin">PIN: (4 digits)</label>
+<input id="pin" name="pin" type="password" pattern="\d{4,4}" required />
+<form action="#">
+    <div>
+      <label>
+        LANDSCAPING BUDGET Between 1 and 10$
+        <input type="number" min="1" max="10" required />
+      </label>
+    </div>
+    <div><input type="submit" value="submit" /></div>
+  </form>
+  <hr />
+  <ul id="log"></ul>
 
 
     <script src="index.js"></script>
