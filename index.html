@@ -84,8 +84,34 @@
     <div><input type="submit" value="submit" /></div>
   </form>
 </fieldset>
-  <hr/>
+  
   <ul id="log"></ul>
+  <div class="circle4">4</div>
+<fieldset>
+    <span>DOUBLE ORDERS SAVE TEN PERCENT!</span>
+
+<button onclick="myFunction()">DOUBLE</button>
+<p>Click "DOUBLE" to DOUBLE order and SAVE!</p>
+
+<div id="save" style="border:1px solid black;background-color:rgba(255, 192, 203, 0.302)">
+  <p style="color:red;">One Pineapple Palm</p>
+  <p style="color:green;">One Travelers Palm</p>
+  <p style="color:blue;">One Red Yucca Plant</p>
+</div>
+
+<script>
+function myFunction() {
+  const node = document.getElementById("demo");
+  const clone = node.cloneNode(true);
+  document.body.appendChild(clone);
+}
+</script>
+
+
+</fieldset>
+  <hr/>
+
+
 
   <!-- <iframe width="320" height="245" src="https://www.youtube.com/embed/shorts/XpmQfNvr6jE">
   </iframe> -->
