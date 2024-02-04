@@ -17,4 +17,19 @@ pushMeFirst.addEventListener("click", myAlert2);
 function myAlert2(){
     alert("Welcome!");
 }
+// var input = document.getElementById('username');
+// input.oninvalid = function(event) {
+// 	event.target.setCustomValidity('Username should only contain lowercase letters. e.g. john');
+// }
+
+const input = document.querySelector("input");
+const log = document.getElementById("log");
+
+input.addEventListener("invalid", (e) => {
+  log.appendChild(
+    Object.assign(document.createElement("li"), {
+      textContent: JSON.stringify(e.target.value),
+    }),
+  );
+});
 
