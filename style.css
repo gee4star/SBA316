@@ -2,6 +2,7 @@ body {
     background-image: url(https://t3.ftcdn.net/jpg/06/32/16/70/360_F_632167016_BtM8ywPtfm8SzZRnBelGWRvesw0QNjAM.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: snow;
 }
 h1 {
     color: aqua;
@@ -41,4 +42,19 @@ h1 {
   }
   label {
     display: block;
+  }
+  input:invalid {
+	border-color: red;
+}
+input,
+input:valid {
+	border-color: #ccc;
+}
+label {
+    display: block;
+    margin-top: 1em;
+  }
+  
+  input:valid {
+    background-color: palegreen;
   }
