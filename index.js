@@ -47,3 +47,4 @@ for (let i = 0; i < count; i++) {
 let paragraph = document.createElement("p");
 paragraph.innerText="Contact Us: 602-8675309";
 document.body.appendChild(paragraph);
+
