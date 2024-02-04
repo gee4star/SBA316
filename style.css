@@ -36,10 +36,33 @@ h1 {
     text-align: center;
     font: 22px Arial, sans-serif;
   }
+  .circle3 {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    color: #000;
+    text-align: center;
+    font: 22px Arial, sans-serif;
+  }
+  .circle4 {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    color: #000;
+    text-align: center;
+    font: 22px Arial, sans-serif;
+  }
   fieldset {
     display: block;
-    width: 317px;
+    width: 322px;
   }
+
   label {
     display: block;
   }
@@ -58,3 +81,4 @@ label {
   input:valid {
     background-color: palegreen;
   }
+
